@@ -6,6 +6,8 @@ name: Examples on simulated H100
 # (--@rules_cuda//cuda:archs=compute_90) and the default shared cudart is used.
 
 on:
+  push:
+    branches: [verify-gpu-sim]
   workflow_dispatch:
   pull_request:
     paths:
